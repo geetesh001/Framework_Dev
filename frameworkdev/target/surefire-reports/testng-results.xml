@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="31890" started-at="2016-10-18T15:57:32Z" finished-at="2016-10-18T15:58:04Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="31890" started-at="2016-10-18T15:57:32Z" finished-at="2016-10-18T15:58:04Z">
+      <class name="testScript.Scenario_Search">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testScript.Scenario_Search@17a2457]" name="launchBrowser" is-config="true" duration-ms="5192" started-at="2016-10-18T21:27:55Z" finished-at="2016-10-18T21:28:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testScript.Scenario_Search@17a2457]" name="search" duration-ms="2130" started-at="2016-10-18T21:28:00Z" data-provider="Valid_Search" finished-at="2016-10-18T21:28:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GB_10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[gandhi]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[469.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScript.Scenario_Search@17a2457]" name="tearDown" is-config="true" duration-ms="1403" started-at="2016-10-18T21:28:02Z" finished-at="2016-10-18T21:28:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testScript.Scenario_Search -->
+      <class name="testScript.Scenario_Login">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testScript.Scenario_Login@df4efb]" name="launchBrowser" is-config="true" duration-ms="6401" started-at="2016-10-18T21:27:33Z" finished-at="2016-10-18T21:27:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testScript.Scenario_Login@df4efb]" name="login" duration-ms="2018" started-at="2016-10-18T21:27:40Z" data-provider="invalid_login" finished-at="2016-10-18T21:27:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GB_01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Raje]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ghagh]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Sorry we were unable to complete this step because :]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScript.Scenario_Login@df4efb]" name="tearDown" is-config="true" duration-ms="1599" started-at="2016-10-18T21:27:42Z" finished-at="2016-10-18T21:27:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testScript.Scenario_Login@df4efb]" name="launchBrowser" is-config="true" duration-ms="5662" started-at="2016-10-18T21:27:43Z" finished-at="2016-10-18T21:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testScript.Scenario_Login@df4efb]" name="login" duration-ms="4677" started-at="2016-10-18T21:27:49Z" data-provider="invalid_login" finished-at="2016-10-18T21:27:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GB_02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[geetesh]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[learn123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Sorry we were unable to complete this step because :]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScript.Scenario_Login@df4efb]" name="tearDown" is-config="true" duration-ms="1422" started-at="2016-10-18T21:27:54Z" finished-at="2016-10-18T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testScript.Scenario_Login -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
