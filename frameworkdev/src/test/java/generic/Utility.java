@@ -11,7 +11,7 @@ public class Utility {
 		FileInputStream fis=null;
 		
 		try {
-			fis=new FileInputStream("E:\\AA_SELENIUM_BASICS\\zz_eclipse_project\\frameworkdev\\src\\config.properties");
+			fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\config.properties");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

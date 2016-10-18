@@ -17,7 +17,7 @@ public class Excel_Reader {
 	
 	public Excel_Reader(){
 		try {
-			 fs =new FileInputStream(Utility.getValue("dataExcelSheetPath"));
+			 fs =new FileInputStream(System.getProperty("user.dir")+Utility.getValue("dataExcelSheetPath"));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -84,7 +84,7 @@ public class Excel_Reader {
 	public void writeExcel(){
 		FileOutputStream fos=null;
 		try {
-			fos=new FileOutputStream("E:\\AA_SELENIUM_BASICS\\zz_eclipse_project\\frameworkdev\\src\\Test_Data.xlsx");
+			fos=new FileOutputStream(System.getProperty("user.dir")+Utility.getValue("dataExcelSheetPath"));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

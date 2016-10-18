@@ -19,7 +19,7 @@ public class Base_Class {
 	
 @BeforeMethod
 public void launchBrowser(){
-	System.setProperty("webdriver.chrome.driver",Utility.getValue("chromeDriverPath") );
+	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+Utility.getValue("chromeDriverPath") );
 	driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -38,7 +38,7 @@ public void screenshots(String TC_id,String order){
 	
 	TakesScreenshot screenshot=(TakesScreenshot)driver;
 	File screenshotAs = screenshot.getScreenshotAs(OutputType.FILE);
-	File file=new File("E:\\AA_SELENIUM_BASICS\\zz_eclipse_project\\frameworkdev\\src\\Screenshots"+TC_id+"_"+order+"screenshot.png");
+	File file=new File(System.getProperty("user.dir")+"src\\Screenshots"+TC_id+"_"+order+"screenshot.png");
 	try {
 		FileUtils.copyFile(screenshotAs, file);
 	} catch (IOException e) {
